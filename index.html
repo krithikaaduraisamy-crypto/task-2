@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color: white;
+        }
+
+       header {
+       background: #2f3e52;
+       color: white;
+       padding: 40px 20px;
+       text-align: center;
+}
+        header h1 {
+            font-size: 2.5rem;
+            color: #00f5d4;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f5d4;
+        }
+
+      
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #00f5d4;
+            margin-bottom: 20px;
+        }
+
+       
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+       
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .skill-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            width: 150px;
+            border-radius: 10px;
+            border:5px solid #00f5d4;
+            backdrop-filter: blur(8px);
+            color: white;
+            font-weight: bold;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .project {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border:5px solid #00f5d4;
+            text-align: left;
+            backdrop-filter: blur(8px);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        
+        .contact p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .email {
+            color: #00f5d4;
+            font-weight: bold;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+        }
+
+       
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Krithikaa</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2><ins>About Me</ins></h2>
+        <p>
+            Hi! I'm Krithikaa, a passionate student learning web design and development.
+            I build responsive and modern websites using HTML and CSS.
+            I enjoy creating clean designs that look beautiful on all devices.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2><ins>My Skills</ins></h2>
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">Responsive Design</div>
+            <div class="skill-box">Basic JavaScript</div>
+        </div>
+    </div>
+</section>
+
+     <section id="projects"> 
+    <div class="container">
+       
+        <div class="projects-grid">
+            <div class="project">
+                <h3>HTML</h3>
+                <p>this is used to create the structure of a web page using elements like headings,paragraphs,images,and links.</p>
+            </div>
+
+            <div class="project">
+                <h3>CSS</h3>
+                <p>This is used to design and style web pages by adding colors,layout,fronts,spacing,and responsiveness</p>
+            </div>
+
+            <div class="project">
+                <h3>C</h3>
+                <p>C is the programming language used to develop system software,applications and to understand core programming concepts like variables ,loops,and functions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>You can reach me at:</p>
+        <p class="email">krithikaa@email.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Krithikaa | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
